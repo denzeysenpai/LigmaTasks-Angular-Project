@@ -1,0 +1,14 @@
+.content {
+    width: auto;
+    padding: 90px auto;
+    position: relative;
+    display: flex;
+    min-height: 80px;
+    justify-content: center;
+    background-image: linear-gradient(rgb(250, 174, 218),rgb(213, 92, 218) ,rgb(111, 20, 129));
+    
+    h4 {
+        color: white;
+        margin: auto;
+    }
+}

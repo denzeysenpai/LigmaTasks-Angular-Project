@@ -1,0 +1,58 @@
+.navigation-bar {
+    margin: 0;
+    padding: 18px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(248, 248, 248);
+    box-shadow: 0px 4px 6px rgba(102, 92, 119, 0.479);
+    height: fit-content;
+    width: 100vw;
+    position: fixed;
+    z-index: 50;
+
+    .navigation-buttons-wrapper {
+        margin: auto 60px auto auto;
+    }
+
+    #highlight {
+        color:#8d18bb;
+    }
+
+    .logo-wrapper {
+        margin-left: 40px;
+    }
+
+    a {
+        text-decoration: none;
+        padding: 6px 32px;
+        color: black;
+        background-color: rgb(248, 248, 248);
+        margin: 5px;
+        /* border: 2.5px solid rgb(23, 13, 110); */
+        border-image: linear-gradient(#ffffff00, #ffffff00) 5 100;
+        border-radius: 2px;
+        position: relative;
+        overflow: hidden;
+        border-width: 4px;
+        border-style: solid;
+        transition: all 0.1s ease;
+    }
+        
+    a:hover, a .active {
+        transition: all 0.32s ease;
+        border-image: linear-gradient(#ef82fd, #9f28ce, #51076e) 5 100;
+        color: rgb(155, 61, 179);
+        background-color: #f7dcfc;
+        box-shadow: 0px 0px 10px  #9f28ce6b;
+    }
+
+    a:active {
+        padding: 1px 20px;
+        transition: all 0.3s ease;
+        margin: 10px 17px;
+    }
+
+    #myProfile {
+        display: none;
+    }
+}

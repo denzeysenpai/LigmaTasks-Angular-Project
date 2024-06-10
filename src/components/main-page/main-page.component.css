@@ -1,0 +1,49 @@
+img {
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    min-height: 40vh;
+    object-fit: cover;
+}
+
+.hero-strip {
+    height: 40vh;
+    width: 100%;
+    display: flex;
+}
+
+.content-wrapper {
+    min-height: fit-content;
+}
+
+.responsive-container {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    width: auto;
+    position: relative;
+    justify-content: space-around;
+
+    .textcontent-wrapper {
+        text-align: center;
+        margin: auto;
+        flex-wrap: wrap;
+
+        h1 {
+            font-size: 60px;
+            font-weight: 800;
+            color: white;
+            text-shadow: 4px 4px 2px rgba(63, 6, 44, 0.178);
+            z-index: 2;
+        }
+        h3 {
+            font-size: 50px;
+            font-weight: 200;
+            font-style: italic;
+            line-height: 12px;
+            z-index: 1;
+            color: rgba(90, 4, 90, 0.781);
+        }
+    }
+}
