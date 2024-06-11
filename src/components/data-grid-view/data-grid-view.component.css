@@ -1,0 +1,108 @@
+.content {
+  min-height: 600px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  /* overflow: hidden; */
+}
+
+app-generic-page-content-filler {
+  margin: auto;
+  margin-top: 120px;
+}
+
+#datagrid-image {
+  position: absolute;
+  z-index: -1;
+  height: 100vh;
+}
+
+.input-box-container {
+  height: fit-content;
+  margin-top:60px;
+  padding: 40px;
+  width: auto;
+  display: flex;
+  background-color: rgb(255, 255, 255);
+
+  .input-box {
+    margin: auto;
+    padding: 30px;
+    background-color: white;
+    min-height: fit-content;
+    min-width: fit-content;
+    border-radius: 6px;
+  }
+
+  textarea,
+  input {
+    min-width: 500px;
+    max-width: 500px;
+    min-height: auto;
+    max-height: 300px;
+    padding: 20px;
+    overflow: hidden;
+  }
+
+  text-area {
+    min-height: 100px;
+  }
+  .row {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    flex-direction: column;
+  }
+  button {
+    width: auto;
+    padding: 14px 40px;
+    margin: 4px 0px;
+    font-size: 18px;
+    font-weight: 300;
+    color: white;
+    background-color: rgb(151, 23, 155);
+    border: 1px solid rgba(128, 128, 128, 0);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    box-shadow: inset 0px 0px 0px rgb(118, 18, 122);
+  }
+
+  button:hover {
+    color: white;
+    padding: 23px 36px 5px 44px;
+    background-color: rgb(196, 25, 202);
+    border: 1px solid rgba(128, 128, 128, 0);
+    transition: all 0.3s ease;
+    box-shadow: inset 4px 9px 0px rgb(118, 18, 122);
+  }
+}
+
+
+table {
+  margin: auto;
+  padding: 20px;
+  position: relative;
+  border: 0.8px solid rgba(100, 93, 117, 0.466);
+  box-shadow: 4px 3px 6px rgba(100, 93, 117, 0.466);
+  display: block;
+  overflow: hidden;
+  border-radius: 8px;
+
+  td,
+  th {
+    padding: 12px 36px;
+    text-align: center;
+    min-width: fit-content;
+    border: 0.4px solid pink;
+    max-width: 100px;
+  }
+
+  th {
+    color: white;
+    background-color: rgb(129, 31, 96);
+  }
+}
+
+
+

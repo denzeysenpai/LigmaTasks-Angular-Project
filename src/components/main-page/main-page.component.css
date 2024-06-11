@@ -1,49 +1,108 @@
 img {
-    position: absolute;
-    z-index: -1;
-    width: 100vw;
-    min-height: 40vh;
-    object-fit: cover;
+  position: absolute;
+  z-index: -1;
+  width: 100vw;
+  min-height: 40vh;
+  object-fit: cover;
 }
 
 .hero-strip {
-    height: 40vh;
-    width: 100%;
-    display: flex;
+  height: 40vh;
+  width: 100%;
+  display: flex;
 }
 
 .content-wrapper {
-    min-height: fit-content;
+  min-height: fit-content;
 }
 
 .responsive-container {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  width: auto;
+  position: relative;
+  justify-content: space-around;
+
+  .textcontent-wrapper {
+    text-align: center;
     margin: auto;
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
-    width: auto;
-    position: relative;
-    justify-content: space-around;
+    flex-wrap: wrap;
 
-    .textcontent-wrapper {
-        text-align: center;
-        margin: auto;
-        flex-wrap: wrap;
-
-        h1 {
-            font-size: 60px;
-            font-weight: 800;
-            color: white;
-            text-shadow: 4px 4px 2px rgba(63, 6, 44, 0.178);
-            z-index: 2;
-        }
-        h3 {
-            font-size: 50px;
-            font-weight: 200;
-            font-style: italic;
-            line-height: 12px;
-            z-index: 1;
-            color: rgba(90, 4, 90, 0.781);
-        }
+    h1 {
+      font-size: 60px;
+      font-weight: 800;
+      color: white;
+      text-shadow: 4px 4px 2px rgba(63, 6, 44, 0.178);
+      z-index: 2;
     }
+
+    h3 {
+      font-size: 50px;
+      font-weight: 200;
+      font-style: italic;
+      line-height: 12px;
+      z-index: 1;
+      color: rgba(90, 4, 90, 0.781);
+    }
+  }
+}
+
+@media screen and (max-width: 1090px) {
+  .hero-strip {
+    height: 40vh;
+    width: 100%;
+  }
+
+  .responsive-container {
+    .textcontent-wrapper {
+      h1 {
+        font-size: 50px;
+        font-weight: 800;
+      }
+
+      h3 {
+        font-size: 40px;
+        font-weight: 200;
+        line-height: 8px;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 790px) {
+  .hero-strip {
+    height: 50vh;
+    width: 100%;
+  }
+
+  img {
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    min-height: 48vh;
+    object-fit: cover;
+  }
+
+  .responsive-container {
+    .textcontent-wrapper {
+      display: block;
+      margin-top: 130px;
+      width: 320px;
+      text-align: left;
+
+      h1 {
+        font-size: 40px;
+        font-weight: 600;
+      }
+
+      h3 {
+        font-size: 30px;
+        font-weight: 100;
+        line-height: 30px;
+      }
+    }
+  }
 }

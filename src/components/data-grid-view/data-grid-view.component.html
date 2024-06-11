@@ -1,12 +1,60 @@
+<img id="datagrid-image" src="../../media/hero-bg.png" alt="">
 <main class="content">
+  @if(takesInput) {
+  <div class="input-box-container">
+    <div class="input-box">
+      <div class="row">
+        <input id="task-title-input" type="text" placeholder="Task Title Here">
+      </div>
+      <div class="row">
+        <textarea #task id="task-content-input" placeholder="Create a new task!" name="" id=""></textarea>
+      </div>
+      <div class="row">
+        <button (click)="SubmitInput(task.value)">Submit</button>
+        <button (click)="ClearInput()">Clear</button>
+      </div>
+    </div>
+  </div>
+  }
+  @if(!takesInput && this.ArchiveIsEmpty()) {
+  <app-generic-page-content-filler image="../../media/undraw_well_done_re_3hpo.svg" title="Uh-oh.."
+    text="You don't seem to have any tasks as of the moment, go make one first!"></app-generic-page-content-filler>
+  }
+  @else {
+  <table>
     <tbody>
-        <thead>
-            <th>Title</th>
-            <th>Task Description</th>
-            <th>Status</th>
-            <th>Date Added</th>
-            <th>Complete</th>
-            <th>Archive</th>
-        </thead>
+      <tr>
+        <th>Title</th>
+        <th>Task Description</th>
+        <th>Status</th>
+        <th>Date Added</th>
+        @if(takesInput) {
+        <th>Complete</th>
+        <th>Archive</th>
+        }
+        @else {
+        <th>Remove</th>
+        }
+      </tr>
+      @for (item of collectionOfTasks; track item) {
+      <tr>
+        <td>{{item.title}}</td>
+        <td>{{item.content}}</td>
+        <td>{{item.status}}</td>
+        <td>{{item.date_added}}</td>
+        @if(item.status == 'Archived' || item.status == 'Completed') {
+        <td><button (click)="DeleteTask(item.id,'1')">Remove</button></td>
+        }
+        @else {
+        <td><button (click)="CompleteTask(item.id,'1')">Complete</button></td>
+        <td><button (click)="ArchiveTask(item.id,'1')">Archive</button></td>
+        }
+      </tr>
+      }
     </tbody>
+  </table>
+<button (click)="Refresh(filter1, filter2)">refresh</button>
+  }
+
+
 </main>

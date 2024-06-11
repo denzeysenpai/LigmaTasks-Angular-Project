@@ -3,17 +3,28 @@
         <h2>Ligma<span id="highlight">Tasks</span></h2>
     </div>
     <nav class="navigation-buttons-wrapper">
-        <a href="/home-page" class="active">Home</a>
-        <a href="/archives-page">Archive</a>
-        <a href="/my-tasks-page">My Tasks</a>
-        <a href="/about-us-page">About us</a>
-        <a href="/login-page" id="login">Login</a>
-        <a href="/acount-profile-page" id="myProfile">My Profile</a>
+        <a ondragstart="return false;" ondrop="return false;" routerLink="/home-page" class="active">Home</a>
+        <a ondragstart="return false;" ondrop="return false;" routerLink="/archives-page">Archive</a>
+        <a ondragstart="return false;" ondrop="return false;" routerLink="/my-tasks-page">My Tasks</a>
+        <a ondragstart="return false;" ondrop="return false;" routerLink="/about-us-page">About us</a>
+        <a ondragstart="return false;" ondrop="return false;" routerLink="/login-page" id="login">Login</a>
+        <a ondragstart="return false;" ondrop="return false;" routerLink="/acount-profile-page" id="myProfile">My
+            Profile</a>
 
-        <div class="hamburger-menu">
+        <div id="hamburger-menu" (click)="HiddenMenuToggle()" class="hamburger-menu">
             <span></span>
             <span></span>
             <span></span>
         </div>
     </nav>
+    <div id="hidden-menu" class="hidden-menu">
+        <a id="menu-child" ondragstart="return false;" ondrop="return false;" routerLink="/home-page"
+            class="active">Home</a>
+        <a id="menu-child" ondragstart="return false;" ondrop="return false;" routerLink="/archives-page">Archive</a>
+        <a id="menu-child" ondragstart="return false;" ondrop="return false;" routerLink="/my-tasks-page">My Tasks</a>
+        <a id="menu-child" ondragstart="return false;" ondrop="return false;" routerLink="/about-us-page">About us</a>
+        <a id="menu-child" ondragstart="return false;" ondrop="return false;" routerLink="/login-page" id="login">Login</a>
+        <a id="menu-child" ondragstart="return false;" ondrop="return false;" routerLink="/acount-profile-page"
+            id="myProfile">My Profile</a>
+    </div>
 </main>
