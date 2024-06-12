@@ -1,13 +1,14 @@
 .content {
-  margin-top: 10vh;
-  height: 90vh;
+  margin-top: 5vh;
+  min-height: 92vh;
   display: flex;
   overflow: hidden;
 
   #background {
     z-index: -2;
     position: absolute;
-    height: 90vh;
+    margin: 0;
+    height: 91vh;
     filter: blur(4px);
   }
 
@@ -60,6 +61,16 @@
       display: flex;
       margin: 14px;
       flex-direction: column;
+
+      a,
+      .check-box {
+        margin-left: auto;
+      }
+
+      label {
+        margin-right: 10px;
+        font-size: 14px;
+      }
 
       input,
       button {

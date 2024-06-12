@@ -3,12 +3,47 @@
     padding: 90px auto;
     position: relative;
     display: flex;
-    min-height: 80px;
-    justify-content: center;
-    background-image: linear-gradient(rgb(250, 174, 218),rgb(213, 92, 218) ,rgb(111, 20, 129));
-    
+    flex-direction: column;
+    min-height: fit-content;
+    background-image: linear-gradient(rgb(250, 174, 218), rgb(213, 92, 218), rgb(111, 20, 129));
+
     h4 {
         color: white;
         margin: auto;
+    }
+
+    .columns-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: inherit;
+        width: inherit;
+        text-align: left;
+        position: relative;
+        padding: 50px;s
+
+        .column {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            text-align: left;
+
+            .row {
+                height: fit-content;
+                display: flex;
+                flex-direction: row;
+                position: relative;
+
+                h4 {
+                    position: relative;
+                    text-align: left;
+                    margin: auto;
+                    display: block;
+                }
+            }
+
+
+        }
     }
 }

@@ -28,4 +28,12 @@ export class MainPageComponent {
   `
   image2 = '../../media/undraw_counting_stars_re_smvv.svg'
   bool2 = true
+
+  title3 = "Ligma Verified Status soon!"
+  text3 = `
+  Ligma Verified users are expected to have professional dashboard and features that track the user's
+  rate of completion in their tasks while utilizing the brand new and optimized Ligma AI. With this
+  users will be able to have a better understanding of their tasks and their performance!
+  `
+  image3 = '../../media/undraw_drink_coffee_v3au.svg'
 }

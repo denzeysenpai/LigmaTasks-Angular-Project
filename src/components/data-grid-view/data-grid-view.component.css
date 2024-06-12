@@ -1,5 +1,5 @@
 .content {
-  min-height: 600px;
+  min-height: 92vh;
   background-color: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
