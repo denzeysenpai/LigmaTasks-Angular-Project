@@ -21,6 +21,9 @@
     text="You don't seem to have any tasks as of the moment, go make one first!"></app-generic-page-content-filler>
   }
   @else {
+    @if(!takesInput) {
+      <h1 id="archivesTitle">Below are your archived tasks!</h1>
+    }
   <table>
     <tbody>
       <tr>
@@ -53,8 +56,6 @@
       }
     </tbody>
   </table>
-<button (click)="Refresh(filter1, filter2)">refresh</button>
+<button id="refreshButton" (click)="Refresh(filter1, filter2)">Refresh table</button>
   }
-
-
 </main>

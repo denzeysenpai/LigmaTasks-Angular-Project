@@ -23,7 +23,7 @@ app-generic-page-content-filler {
   padding: 40px;
   width: auto;
   display: flex;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(34, 6, 6);
 
   .input-box {
     margin: auto;
@@ -31,7 +31,8 @@ app-generic-page-content-filler {
     background-color: white;
     min-height: fit-content;
     min-width: fit-content;
-    border-radius: 6px;
+    border-radius: 20px;
+    box-shadow: 6px 8px 8px rgba(0, 0, 0, 0.767);
   }
 
   textarea,
@@ -40,8 +41,11 @@ app-generic-page-content-filler {
     max-width: 500px;
     min-height: auto;
     max-height: 300px;
-    padding: 20px;
+    padding: 16px;
     overflow: hidden;
+    background-color: rgb(242, 213, 255);
+    border: 0px solid gray;
+    border-radius: 20px;
   }
 
   text-area {
@@ -57,7 +61,7 @@ app-generic-page-content-filler {
   button {
     width: auto;
     padding: 14px 40px;
-    margin: 4px 0px;
+    margin: 8px 0px;
     font-size: 18px;
     font-weight: 300;
     color: white;
@@ -65,22 +69,29 @@ app-generic-page-content-filler {
     border: 1px solid rgba(128, 128, 128, 0);
     transition: all 0.3s ease;
     cursor: pointer;
-    box-shadow: inset 0px 0px 0px rgb(118, 18, 122);
+    border-radius: 50px;
+    box-shadow: 0px 0px 0px rgb(118, 18, 122);
   }
 
   button:hover {
     color: white;
-    padding: 23px 36px 5px 44px;
     background-color: rgb(196, 25, 202);
     border: 1px solid rgba(128, 128, 128, 0);
     transition: all 0.3s ease;
-    box-shadow: inset 4px 9px 0px rgb(118, 18, 122);
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.582);
+    transform: scale(1.02);
+  }
+
+  button:active {
+    transform: scale(1);
   }
 }
 
+#archivesTitle {
+  margin: 160px auto 20px auto;
+}
 
 table {
-  margin: auto;
   padding: 20px;
   position: relative;
   border: 0.8px solid rgba(100, 93, 117, 0.466);
@@ -88,6 +99,7 @@ table {
   display: block;
   overflow: hidden;
   border-radius: 8px;
+  margin: 50px auto;
 
   td,
   th {
@@ -102,6 +114,13 @@ table {
     color: white;
     background-color: rgb(129, 31, 96);
   }
+}
+
+#refreshButton {
+  padding: 20px;
+  margin-bottom: 0px;
+  margin-top: auto;
+  width: 100%;
 }
 
 

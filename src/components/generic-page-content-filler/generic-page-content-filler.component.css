@@ -19,14 +19,22 @@
         /* background-color: rgba(238, 152, 255, 0.692); */
         padding: 60px;
         border-radius: 90px;
+        transition: all 0.12s ease;
         border: 8px solid rgba(164, 0, 170, 0.603);
+    }
+
+    img:hover,
+    h1:hover,
+    p:hover {
+        transition: all 0.12s ease;
+        transform: scale(1.04);
     }
 
     .item {
         margin: auto;
         flex-wrap: wrap;
         min-width: 300px;
-        
+
     }
 
     h1,
