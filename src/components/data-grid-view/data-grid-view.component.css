@@ -23,7 +23,7 @@ app-generic-page-content-filler {
   padding: 40px;
   width: auto;
   display: flex;
-  background-color: rgb(34, 6, 6);
+  background-color: rgba(34, 6, 26, 0.809);
 
   .input-box {
     margin: auto;

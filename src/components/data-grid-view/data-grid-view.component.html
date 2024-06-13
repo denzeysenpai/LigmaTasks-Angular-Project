@@ -1,6 +1,7 @@
 <img id="datagrid-image" src="../../media/hero-bg.png" alt="">
 <main class="content">
   @if(takesInput) {
+    <!-- this code block here is for the input box that appears in the my tasks page -->
   <div class="input-box-container">
     <div class="input-box">
       <div class="row">
@@ -10,17 +11,19 @@
         <textarea #task id="task-content-input" placeholder="Create a new task!" name="" id=""></textarea>
       </div>
       <div class="row">
-        <button (click)="SubmitInput(task.value)">Submit</button>
-        <button (click)="ClearInput()">Clear</button>
+        <button (click)="SubmitInput(task.value); task.value = '';">Submit</button>
+        <button (click)="ClearInput(); task.value = '';">Clear</button>
       </div>
     </div>
   </div>
   }
   @if(!takesInput && this.ArchiveIsEmpty()) {
+    <!-- this command block is triggered when the page is on archives, to make the component reusable -->
   <app-generic-page-content-filler image="../../media/undraw_well_done_re_3hpo.svg" title="Uh-oh.."
     text="You don't seem to have any tasks as of the moment, go make one first!"></app-generic-page-content-filler>
   }
   @else {
+    <!-- this is for both but if its on the archives page the title will appear -->
     @if(!takesInput) {
       <h1 id="archivesTitle">Below are your archived tasks!</h1>
     }
